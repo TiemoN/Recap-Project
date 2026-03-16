@@ -63,13 +63,18 @@ body {
 .home-button,
 .bookmark-button,
 .profile-button {
-  background-color: rgb(251, 145, 255);
+  background-color: rgb(153, 0, 133);
   flex: 1;
   border: none;
   outline: 2px solid black;
+  
 }
 .home-button:active,
 .bookmark-button:active,
 .profile-button:active {
   background-color: rgb(138, 0, 143);
 }
+a{
+    color: inherit;
+}
+
