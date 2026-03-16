@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" .css />
   </head>
   <body>
     <header><h1 class="app-title">Quizzler App</h1></header>
     <main>
-      <section>
+      <section class="profile-box">
         <svg
+          class="profile-image"
           xmlns="http://www.w3.org/2000/svg"
           width="150"
           height="150"
@@ -25,20 +27,22 @@
           <circle cx="12" cy="10" r="4" />
           <circle cx="12" cy="12" r="10" />
         </svg>
-        <p>Tiemo-Faris Nebie</p>
+
+        <h2 class="profile-name">Tiemo-Faris Nebie</h2>
       </section>
-      <section>
-        <h2>about me</h2>
-        <p>
+      <section class="description">
+        <h3 class="about-me">About me</h3>
+        <p class="profile-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officia
           explicabo, quod odit saepe debitis voluptate minima alias nobis illo
           nam facilis mollitia quisquam aliquid totam numquam odio ducimus
           excepturi?
         </p>
       </section>
-      <section>
-        <div>
+      <section class="icon-list">
+        <section class="question-placement">
           <svg
+            class="question-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -56,9 +60,12 @@
             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
             <path d="M12 17h.01" />
           </svg>
-        </div>
-        <div>
+          <p class="number-question">10</p>
+        </section>
+
+        <section class="bookmark-placement">
           <svg
+            class="bookmark-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -75,10 +82,98 @@
             />
             <path d="m9 10 2 2 4-4" />
           </svg>
-        </div>
+          <p class="number-bookmark">1</p>
+        </section>
       </section>
-      <h3>settings</h3>
-      <h4>Dark mode</h4>
+      <section class="Parameters">
+        <h4 class="settings">Settings</h4>
+        <section class="dark-mode">
+          <h5 class="dark-text">Dark mode</h5>
+          <svg
+            class="icon-dark-mode"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-toggle-left-icon lucide-toggle-left"
+          >
+            <circle cx="9" cy="12" r="3" />
+            <rect width="37" height="14" x="2" y="5" rx="7" />
+          </svg>
+        </section>
+      </section>
     </main>
+    <footer>
+      <section class="nav-box">
+        <button class="home-button">
+          <a href="/Homepage.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-house-icon lucide-house"
+            >
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+            </svg>
+          </a>
+        </button>
+        <button class="bookmark-button">
+          <a href="/Bookmark-section.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-plus-icon lucide-bookmark-plus"
+            >
+              <path d="M12 7v6" />
+              <path d="M15 10H9" />
+              <path
+                d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </a>
+        </button>
+        <button class="profile-button">
+          <a href="/Profile.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-user-icon lucide-circle-user"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="10" r="3" />
+              <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+            </svg>
+          </a>
+        </button>
+      </section>
+    </footer>
   </body>
 </html>
