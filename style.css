@@ -1,23 +1,35 @@
+@import url(global.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .app-title {
   display: flex;
   justify-content: center;
   background-color: rgb(76, 19, 233);
+  width: 100%;
+  margin: 0 0 30px 0;
+  padding: 30px;
 }
 body {
-  background-color: rgb(190, 37, 250);
+  background-color: var(--bg-color);
 }
 
 .card {
   display: grid;
   place-items: center;
-  background-color: rgb(132, 115, 228);
+  background-color: var(--card-color);
   position: relative;
   margin-bottom: 56px;
   margin-left: 30px;
   margin-right: 30px;
+  border-style: double;
 }
 
 .question {
+  display: flex;
+  margin: 20px 40px 20px;
   font-size: xx-large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -25,6 +37,9 @@ body {
 .answer {
   font-size: x-large;
   background-color: rgb(210, 143, 255);
+  margin: 0 50px 10px;
+  border-style: solid;
+  padding: 0 5%;
 }
 
 .tag-list {
@@ -33,10 +48,12 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   justify-self: flex-start;
+  padding: 30px 0 20px 10px;
 }
 .tags {
   background-color: rgb(128, 181, 241);
   padding: 5px;
+  border-style: double;
 }
 .hide-answer {
   background-color: rgb(205, 183, 255);
@@ -47,8 +64,8 @@ body {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   position: absolute;
-  top: -2px;
-  right: -7px;
+  top: -7px;
+  right: 6px;
 }
 .nav-box {
   display: flex;
@@ -67,14 +84,133 @@ body {
   flex: 1;
   border: none;
   outline: 2px solid black;
-  
+  padding: 10px;
 }
 .home-button:active,
 .bookmark-button:active,
 .profile-button:active {
   background-color: rgb(138, 0, 143);
 }
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
 
+.profile-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-name {
+  font-size: x-large;
+  align-self: center;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.profile-text {
+  display: flex;
+  margin: 10px;
+}
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+}
+.parameters {
+  display: flex;
+}
+.settings {
+  margin: 10px;
+  margin-top: 80px;
+  font-size: x-large;
+}
+.dark-text {
+  margin: 10px;
+  font-size: larger;
+}
+.bg-image1 {
+  background-color: rgb(176, 41, 255);
+  top: 50%;
+  left: 30%;
+  position: fixed;
+  width: 10%;
+  height: 5%;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+.bg-image2 {
+  background-color: rgb(135, 29, 255);
+  top: 60%;
+  left: 20%;
+  position: fixed;
+  width: 10%;
+  height: 5%;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+.bg-image3 {
+  background-color: rgb(78, 4, 163);
+  top: 60%;
+  left: 40%;
+  position: fixed;
+  width: 10%;
+  height: 5%;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+.bg-image4 {
+  background-color: rgb(66, 0, 97);
+  top: 60%;
+  left: 60%;
+  position: fixed;
+  width: 10%;
+  height: 5%;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+.bg-image5 {
+  background-color: rgb(164, 0, 214);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  width: 10%;
+  height: 5%;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+.question-placement {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0 10px 0 0;
+  margin-top: 30px;
+}
+.bookmark-placement {
+  display: flex;
+  margin-top: 30px;
+  border: 2px solid black;
+  padding: 0 10px 0 0;
+}
+.number-question {
+  padding: 0 0 0 10px;
+}
+
+.number-bookmark {
+  padding: 0 0 0 10px;
+}
+.dark-mode {
+  display: flex;
+}
+.icon-dark-mode {
+  margin-top: 10px;
+}
