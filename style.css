@@ -1,58 +1,51 @@
-.app-title{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(76, 19, 233);
-    
-    
-    
+.app-title {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(76, 19, 233);
 }
-body{
-    background-color: rgb(190, 37, 250);
+body {
+  background-color: rgb(190, 37, 250);
 }
 
-.card{
-    display: grid;
-    place-items: center;
-    background-color: rgb(132, 115, 228);
-    position: relative;
-
+.card {
+  display: grid;
+  place-items: center;
+  background-color: rgb(132, 115, 228);
+  position: relative;
 }
 
-.question{
-    font-size: xx-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+.question {
+  font-size: xx-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.answer{
-    font-size: x-large;
-    background-color: rgb(210, 143, 255);
-    
+.answer {
+  font-size: x-large;
+  background-color: rgb(210, 143, 255);
 }
 
-.tag-list{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-self: flex-start;
+
+  
 }
-.tags{
-    
-    background-color: rgb(128, 181, 241);
-    padding: 5px;
-    
-    
+.tags {
+  background-color: rgb(128, 181, 241);
+  padding: 5px;
 }
-.hide-answer{
-    background-color: rgb(205, 183, 255);
-    padding: 15px;
-    
+.hide-answer {
+  background-color: rgb(205, 183, 255);
+  padding: 15px;
+  position: relative;
 }
-.bookmark{
-    position: absolute;
-    top: -15px;
-    right: 5px;
+.bookmark {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  position: absolute;
+  top: -2px;
+  right: -7px;
 }
