@@ -21,10 +21,27 @@ body {
   place-items: center;
   background-color: var(--card-color);
   position: relative;
-  margin-bottom: 56px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 30px 56px 30px;
   border-style: double;
+}
+@media (min-width: 600px) {
+  .card {
+    display: grid;
+    place-items: center;
+    background-color: var(--card-color);
+    position: relative;
+    margin-bottom: 56px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-style: double;
+    
+  }
+  .description {
+      margin: 0 200px 56px 200px;
+    }
+    .icon-list{
+      justify-content: center;
+    }
 }
 
 .question {
@@ -66,6 +83,19 @@ body {
   position: absolute;
   top: -7px;
   right: 6px;
+}
+.bookmark :active {
+  background-color: rgb(141, 0, 160);
+}
+.bookmark-page-icon {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  position: absolute;
+  top: -7px;
+  right: 6px;
+}
+.bookmark-page-icon :active {
+  background-color: rgb(141, 0, 160);
 }
 .nav-box {
   display: flex;
