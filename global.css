@@ -1,5 +1,6 @@
-
-:root{
-    --card-color: rgb(197, 71, 255);
-    --bg-color: rgb(237, 148, 255);
+:root {
+  --card-color: rgb(197, 71, 255);
+  --bg-color: rgb(195, 203, 252);
+  --bg-dark-mode:rgb(5, 0, 0);
+  --text-color-dark-mode:white;
 }
