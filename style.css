@@ -7,13 +7,14 @@
 .app-title {
   display: flex;
   justify-content: center;
-  background-color: rgb(76, 19, 233);
+  background-color: rgb(143, 105, 248);
   width: 100%;
   margin: 0 0 30px 0;
   padding: 30px;
 }
 body {
   background-color: var(--bg-color);
+  transition: all 1s ease;
 }
 
 .card {
@@ -34,14 +35,13 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     border-style: double;
-    
   }
   .description {
-      margin: 0 200px 56px 200px;
-    }
-    .icon-list{
-      justify-content: center;
-    }
+    margin: 0 200px 56px 200px;
+  }
+  .icon-list {
+    justify-content: center;
+  }
 }
 
 .question {
@@ -78,15 +78,21 @@ body {
   position: relative;
 }
 .bookmark {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 0, 0, 0.925);
   border: none;
   position: absolute;
   top: -7px;
   right: 6px;
+  width: 40px;
+  height: 35px;
 }
-.bookmark :active {
+
+.bookmarkChange {
+  background-color: rgb(0, 129, 22);
+}
+/* .bookmark :active {
   background-color: rgb(141, 0, 160);
-}
+} */
 .bookmark-page-icon {
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -110,7 +116,7 @@ body {
 .home-button,
 .bookmark-button,
 .profile-button {
-  background-color: rgb(153, 0, 133);
+  background-color: rgb(255, 157, 242);
   flex: 1;
   border: none;
   outline: 2px solid black;
@@ -239,8 +245,37 @@ a {
   padding: 0 0 0 10px;
 }
 .dark-mode {
-  display: flex;
+  background-color: var(--bg-dark-mode);
+  color: var(--text-color-dark-mode);
+  border-color: whitesmoke;
+  transition: all 1s ease;
 }
+
+.dark-mode-button {
+  background-color: rgba(0, 255, 255, 0);
+  border: none;
+}
+
+/* .dark-mode-button-active{
+  background-color: ;
+} */
 .icon-dark-mode {
   margin-top: 10px;
+}
+.form-section {
+  display: grid;
+  justify-items: center;
+  margin: 15px 0 15px 0;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.form-section-content {
+  margin: 15px 0 25px 0;
+}
+/* .form-text{
+  justify-self: 
+ 
+} */
+.character-space {
 }
